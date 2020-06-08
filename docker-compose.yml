@@ -1,11 +1,13 @@
-version: "3"
+version: '3'
 services:
-  web:
-    container_name: react-tutorial
-    image: react
-    build: .
-    volumes:
-      - ./:/app
+  node:
+    build:
+      context: .
     tty: true
+    environment:
+      - NODE_ENV=production
+    volumes:
+      - ./:/usr/src/app
+    command: sh -c "cd sample_app && yarn start"
     ports:
-      - 8080:8080
+      - "3000:3000"

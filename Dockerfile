@@ -1,5 +1,3 @@
-FROM node:13.8.0-alpine3.11
+FROM node:13.5.0-alpine3.11
 
-ENV NODE_ENV=development
-
-WORKDIR /app
+WORKDIR /usr/src/app
