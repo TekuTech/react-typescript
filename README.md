@@ -1,5 +1,13 @@
 # React & TypeScript
+
+React tutorial with TypeScript.
+
+## Usage
 ```
-docker-compose up --build -d
-docker exec -it react-tutorial /bin/sh
+docker-compose build
+docker-compose up -d
+
+# => localhost:3000
+
+docker-compose stop
 ```
